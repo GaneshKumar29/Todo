@@ -15,12 +15,6 @@
 }
 
 
-/* Remove bullet points from the task list 
-#taskList {
-    list-style: none;
-    padding: 0;
-}*/
-
 /* Style the container */
 .container {
     max-width: 400px;
