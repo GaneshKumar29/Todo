@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles1.css') }}">
+    <title>My To-Do List</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My To-Do List</h1>
+
+            
+        </header>
+        <div class="input-container">
+            <form id="addTaskForm" action="/add_task" method="POST">
+            <input type="text" id="taskInput" name="task_text" placeholder="Add a new task">
+            <button type="submit" id="addTask"  onclick="window.location.reload();">Add</button>
+        </form>
+        </div>
+       <ul id="taskList">
+
+          
+        </ul>
+    </div>
+ 
+    <!-- Add this script to your file.html -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{{ url_for('static', filename='js/script1.js') }}"></script>
+</body>
+</html>
