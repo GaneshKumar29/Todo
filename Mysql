@@ -1,0 +1,5 @@
+CREATE TABLE tasks_sample (
+    task_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    task_text VARCHAR(255),
+    iscompleted TINYINT(1) DEFAULT 0
+);
